@@ -1,0 +1,174 @@
+---
+name: Obsidian & Gold
+colors:
+  surface: '#121414'
+  surface-dim: '#121414'
+  surface-bright: '#38393a'
+  surface-container-lowest: '#0d0e0f'
+  surface-container-low: '#1a1c1c'
+  surface-container: '#1e2020'
+  surface-container-high: '#282a2b'
+  surface-container-highest: '#333535'
+  on-surface: '#e2e2e2'
+  on-surface-variant: '#d0c5af'
+  inverse-surface: '#e2e2e2'
+  inverse-on-surface: '#2f3131'
+  outline: '#99907c'
+  outline-variant: '#4d4635'
+  surface-tint: '#e9c349'
+  primary: '#f2ca50'
+  on-primary: '#3c2f00'
+  primary-container: '#d4af37'
+  on-primary-container: '#554300'
+  inverse-primary: '#735c00'
+  secondary: '#aacec2'
+  on-secondary: '#14362e'
+  secondary-container: '#2b4d44'
+  on-secondary-container: '#99bdb1'
+  tertiary: '#cfcdd3'
+  on-tertiary: '#2f3035'
+  tertiary-container: '#b3b2b8'
+  on-tertiary-container: '#444549'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#ffe088'
+  primary-fixed-dim: '#e9c349'
+  on-primary-fixed: '#241a00'
+  on-primary-fixed-variant: '#574500'
+  secondary-fixed: '#c5eade'
+  secondary-fixed-dim: '#aacec2'
+  on-secondary-fixed: '#00201a'
+  on-secondary-fixed-variant: '#2b4d44'
+  tertiary-fixed: '#e3e2e8'
+  tertiary-fixed-dim: '#c7c6cb'
+  on-tertiary-fixed: '#1a1b20'
+  on-tertiary-fixed-variant: '#46464b'
+  background: '#121414'
+  on-background: '#e2e2e2'
+  surface-variant: '#333535'
+typography:
+  display-lg:
+    fontFamily: Playfair Display
+    fontSize: 64px
+    fontWeight: '700'
+    lineHeight: 72px
+    letterSpacing: -0.02em
+  display-lg-mobile:
+    fontFamily: Playfair Display
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+  headline-md:
+    fontFamily: Playfair Display
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-md:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.05em
+  arabic-display:
+    fontFamily: Playfair Display
+    fontSize: 48px
+    fontWeight: '700'
+    lineHeight: '1.4'
+  arabic-body:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: '1.8'
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  container-max: 1440px
+  gutter: 24px
+  margin-desktop: 80px
+  margin-mobile: 20px
+  section-gap: 120px
+---
+
+## Brand & Style
+The design system embodies an **Immersive Luxury** aesthetic, tailored for a high-end perfume e-commerce experience. The brand personality is mysterious, authoritative, and cinematic, targeting a discerning clientele who values craftsmanship and status.
+
+The visual style is a fusion of **Glassmorphism** and **Cinematic Minimalism**. It utilizes deep, dark backgrounds to make gold and emerald accents "pop" with an inner radiance. The interface should feel like a physical luxury boutique at night—quiet, reflective, and precious. 
+
+**Key Principles:**
+- **Cinematic Depth:** Use of blurred background elements and floating 3D product renders to create a sense of space.
+- **RTL-First Excellence:** The layout is designed primarily for Arabic script, ensuring that the elegance of the calligraphy and typography is balanced by English sub-texts.
+- **Prestige Accents:** Subtle glows and gold gradients are used sparingly to guide the eye toward "Add to Cart" and "Status" indicators.
+
+## Colors
+The palette is rooted in the "Noir" luxury tradition.
+
+- **Deep Obsidian (#0B0C10):** The primary canvas. Use this for all main backgrounds to create an infinite depth effect.
+- **Rich Gold (#D4AF37):** The signature brand color. Reserved for primary actions, headlines of high importance, and active states. It should often be applied as a linear gradient (from #F9E5A8 to #D4AF37) to mimic metallic reflection.
+- **Status Emerald (#10332B):** A dark, saturated green used for "In Stock," "Delivered," or VIP status. It provides a subtle tonal shift from the obsidian base.
+- **Glass Overlays:** Semi-transparent whites and blacks (e.g., `rgba(255, 255, 255, 0.08)`) are used for container backgrounds to achieve the frosted glass effect.
+
+## Typography
+Typography is a study in contrast. **Playfair Display** provides the editorial, high-fashion voice for headlines, while **Inter** ensures absolute legibility for transactional data and body copy.
+
+**Bilingual Hierarchy:**
+- Arabic text should generally be 10-15% larger than the English sub-text to maintain visual weight parity.
+- Line heights for Arabic are increased (1.6 to 1.8) to accommodate the height of scripts like Thuluth or Naskh patterns.
+- Sub-texts (English) should be set in `label-sm` or `body-md` with 60% opacity to remain secondary to the primary Arabic messaging.
+
+## Layout & Spacing
+The layout follows a **Fluid Grid** system with generous safe margins to evoke an "Expensive" feel. White space (or "dark space") is treated as a premium element.
+
+- **Desktop (1440px+):** 12-column grid. Large imagery should often bleed off-edge or sit in a 6-column span.
+- **Mobile (RTL):** Content flows from right to left. The navigation bar is sticky with a glassmorphism backdrop. 
+- **Rhythm:** Use an 8px base unit. Section spacing is intentionally wide (120px+) to allow the 3D elements and "floating" perfumes to breathe without visual clutter.
+
+## Elevation & Depth
+Depth is not created through shadows alone, but through **Optical Layering**:
+
+1.  **Level 0 (Base):** Deep Obsidian (#0B0C10).
+2.  **Level 1 (Cards):** Glassmorphism surfaces. `backdrop-filter: blur(20px)` with a 1px border of `white @ 10%`.
+3.  **Level 2 (Active Elements):** Subtle outer glows using the Primary Gold color. `box-shadow: 0 0 20px rgba(212, 175, 55, 0.15)`.
+4.  **Level 3 (Product):** 3D Floating perfumes with no containers, using "Z-index" to overlap glass cards.
+
+## Shapes
+Shapes are sophisticated and restrained. While most modern SaaS apps use highly rounded corners, this design system uses **Soft (0.25rem)** corners to maintain a sharp, architectural, and "tailored" appearance.
+
+- **Standard Buttons:** `rounded-sm` (4px) or `rounded-md` (8px).
+- **Product Image Containers:** Slightly more rounded (`rounded-lg`) to soften the photographic frame.
+- **Interactive Orbs:** Perfect circles are used for status indicators and decorative 3D background elements.
+
+## Components
+
+### Buttons
+- **Primary:** Gold gradient background with black text. Sharp corners. High-gloss finish.
+- **Secondary (Ghost):** 1px gold border, transparent background, white or gold text.
+- **Glass Button:** Semi-transparent white with heavy backdrop blur, used for "Learn More" or secondary CTA on top of product images.
+
+### Input Fields
+Dark backgrounds (#16171D) with a bottom-only gold border. Labels are in Arabic (Primary) and English (Secondary, smaller).
+
+### Cards & Containers
+All containers must use the glassmorphism effect. Borders should be 1px solid at `rgba(255, 255, 255, 0.1)`. In the "Concentration Levels" or "Bundle Options," use gold fills to indicate progress or selection.
+
+### Status Chips
+Status indicators (e.g., "Shipped") use a dark emerald or gold outline with a subtle inner glow of the same color. Text is centered.
+
+### Navigation
+The header is a floating glass bar. Logos are placed on the right (for RTL), with English menu items as sub-text below the Arabic primary links.
